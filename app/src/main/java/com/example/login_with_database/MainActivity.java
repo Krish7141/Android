@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 String email1=email.getText().toString().trim();
                 String pw1=pw.getText().toString().trim();
                 if(TextUtils.isEmpty(email1)){
-                    Toast.makeText(MainActivity.this,"Please type your Email.",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"Please type your Email1.",Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if(TextUtils.isEmpty(pw1)){
