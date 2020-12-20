@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#423717"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textSize="70dp"
+        android:textColor="#e3b329"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#f2cc5e"
+        android:layout_marginTop="80dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:textColorHint="#a1a1a1"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:id="@+id/email"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#f2cc5e"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#f2cc5e">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pass word"
+            android:textColorHint="#a1a1a1"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:id="@+id/pw"
+            android:inputType="textPassword"
+            android:ems="10"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_round"
+        android:text="Sign in"
+        android:textSize="24dp"
+        android:textColor="#423717"
+        android:id="@+id/si" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_round"
+        android:text="Sign up"
+        android:textSize="24dp"
+        android:textColor="#423717"
+        android:id="@+id/su" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email not verifed..!!"
+            android:textColor="#e3b329"
+            android:textSize="24dp"
+            android:id="@+id/vt"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Verify now"
+            android:id="@+id/vb"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</LinearLayout>
